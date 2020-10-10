@@ -21,7 +21,7 @@ pathname="$PWD/$dirname"
 echo "Curently watching $name..."
 
 function ctrl_c() {
-  output=$(http "http://:${USER}@localhost:9090/requests/status.xml" | grep position)
+  output=$(curl -s "http://:${USER}@localhost:9090/requests/status.xml" | grep position)
 
   regex="[0-1].[0-9]*"
 

@@ -2,7 +2,7 @@
 
 Keep tracks of the videos files you've seen with vlc.
 
-USAGE:
+## Usage:
 `sib file`
 
 > use `ctl-c` to stop vlc and `mv` the file.
@@ -14,3 +14,8 @@ If > 95%, consider the video as fully watch, stop vlc and the tmux, rename the f
 making the files hidden.
 
 > currently, `sib` will look for `[filename].srt`, `[filename].en.srt` and `[filename].fr.srt` subtitle file only.
+
+## Dependencies:
+ - `curl`  
+ - `tmux`  
+ - `vlc`
